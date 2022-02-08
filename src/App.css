@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+.App{
+background-color: rgb(223, 221, 221);
+height: 100vh;
+font-family: sans-serif;
+font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header button{
+    margin-left: 80%;
+    margin-top:5%;
+    padding: 5px 13px;
+    background-color: rgb(223, 221, 221);
+    border: 1px solid rgb(85, 85, 85);
+    border-radius: 8%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button:hover{
+    color:white;
+    background-color: rgb(85, 85, 85);
+    cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header p{
+    text-align: center;
+    margin-bottom: 10vh;
 }
 
-.App-link {
-  color: #61dafb;
+header div{
+    font-size: 2em;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 10vh;
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rozgrywka{
+    width: 80vw;
+    height: 24vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.rozgrywka div{
+    height: 23vh;
+    width: 23vw;
+    text-align: center;
+    border: 1px solid rgb(182, 137, 137);
+    border-radius: 10px;
+    background-size: cover;
+    margin-bottom: 10%;
+}
+
+.papier{
+    background: url(./images/papier.png);
+    background-position: center;
+}
+
+.papier:hover{
+    cursor: pointer;
+}
+
+.kamien{
+    background: url(./images/kamien.png);
+    background-position: center;
+}
+
+.kamien:hover{
+    cursor: pointer;
+}
+
+.nozyce{
+    background: url(./images/nozyce.png);
+    background-position: center;
+}
+
+.nozyce:hover{
+    cursor: pointer;
+}
+
+.wyniki div{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.wybor{
+    text-align: center;
+}
+
+.licznik{
+   color:black;
+   font-size: 1.5em;
+}
+
+footer{
+    text-align: center;
+    margin-top: 10%;
+}
+
+span{
+    margin-left: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.licznik p{
+    font-size: 1.2rem;
+    font-weight: 600;
 }

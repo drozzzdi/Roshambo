@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import Reset from './components/button/Reset';
+import Rozgrywka from './components/Rozgrywka/Rozgrywka';
+import Wyniki from './components/Wyniki/Wyniki';
 
-function App() {
+
+
+function App(props) {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <header>
+      <Reset/>
+
+        <div>Zagrajmy!</div>
+        <p>Wybierz jedną z opcji:</p>
+    </header>
+
+    <section>
+      <Rozgrywka />
+   </section>
+
+   <section>
+     <Wyniki/>
+   </section>
+    <footer>
+      <p>2022</p>
+    </footer>
+
     </div>
   );
 }
